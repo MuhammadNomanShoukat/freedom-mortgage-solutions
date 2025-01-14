@@ -1,5 +1,5 @@
 .scroll-up-arrow{
-    background-color: red;
+    background-color: rgba(0, 127, 221, 1);
     color: white;
     display: inline-block;
     padding: 14px 20px;
@@ -9,4 +9,5 @@
     position: fixed;
     right: 60px;
     bottom: 60px;
+    border: 1px solid #ddd;
 }

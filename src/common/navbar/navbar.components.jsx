@@ -2,12 +2,14 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import logo from "../../assets/images/logo/logo.png"
+import "./navbar.style.scss"
 
 function NavbarMenu() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="/"><img src={logo} alt="header-logo"/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -24,8 +26,8 @@ function NavbarMenu() {
             </NavDropdown>
             <NavDropdown title="About" id="nav-dropdown">
                 <NavDropdown.Item href="#/about-strategic-financial">About Strategic Financial</NavDropdown.Item>
-                <NavDropdown.Item href="#/Mortgage Blog">Mortgage Blog</NavDropdown.Item>
-                <NavDropdown.Item href="#/Mortgage Reviews">Mortgage Reviews</NavDropdown.Item>
+                <NavDropdown.Item href="#/blog">Mortgage Blog</NavDropdown.Item>
+                <NavDropdown.Item href="#/reviews">Mortgage Reviews</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Resources" id="nav-dropdown">
                 <NavDropdown.Item href="#/doc">Doc Uploader</NavDropdown.Item>
@@ -35,7 +37,7 @@ function NavbarMenu() {
             <Nav.Link href="#contact-us">Contact</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Apply Online</Nav.Link>
+            <Nav.Link href="#deets" className='apply-online-btn px-4'>Apply Online</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

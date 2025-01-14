@@ -14,6 +14,12 @@ import Usda from "../pages/usda/usda.component";
 import Va from "../pages/va/va.component";
 import NotFound from "../pages/404.component";
 import ContactUs from "../pages/contact/contact.component";
+import AboutStrategicFinancial from "../pages/about-strategic-financial/about-strategic-financial.component";
+import Blog from "../pages/blog/blog.component";
+import Reviews from "../pages/reviews/reviews.component";
+import Docs from "../pages/docs/docs.component";
+import Calculator from "../pages/calculator/calculator.component";
+import HomeValue from "../pages/home-value/home-value.component";
 
 const AppRoutes = () => {
   return (
@@ -104,6 +110,54 @@ const AppRoutes = () => {
           element={
             <BaseLayout>
               <ContactUs />
+            </BaseLayout>
+          }
+        />
+        <Route
+          path="/about-strategic-financial"
+          element={
+            <BaseLayout>
+              <AboutStrategicFinancial />
+            </BaseLayout>
+          }
+        />
+        <Route
+          path="/blog"
+          element={
+            <BaseLayout>
+              <Blog />
+            </BaseLayout>
+          }
+        />
+        <Route
+          path="/reviews"
+          element={
+            <BaseLayout>
+              <Reviews />
+            </BaseLayout>
+          }
+        />
+        <Route
+          path="/doc"
+          element={
+            <BaseLayout>
+              <Docs />
+            </BaseLayout>
+          }
+        />
+        <Route
+          path="/calculator"
+          element={
+            <BaseLayout>
+              <Calculator />
+            </BaseLayout>
+          }
+        />
+        <Route
+          path="/home-worth"
+          element={
+            <BaseLayout>
+              <HomeValue />
             </BaseLayout>
           }
         />
