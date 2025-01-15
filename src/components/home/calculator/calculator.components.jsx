@@ -8,7 +8,7 @@ import Tabs from "react-bootstrap/Tabs";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faArrowRight, faCalendar } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faCalendar, faDollar } from "@fortawesome/free-solid-svg-icons";
 
 import "./calculator.style.scss";
 
@@ -45,7 +45,7 @@ const Calculator = () => {
               </div>
               <div className="tabs">
                 <Tabs
-                  defaultActiveKey="profile"
+                  defaultActiveKey="conventional"
                   id="uncontrolled-tab-example"
                   className="mb-3"
                 >
@@ -65,24 +65,24 @@ const Calculator = () => {
                       </Col>
                     </Row>
                     <Row>
-                      <Col lg={6}>
+                      <Col lg={7}>
                         <div className="calculator">
                           <Row>
                             <Col lg={6}>
                               <Form.Group
-                                className="mb-3"
+                                className="mb-3 group-wrapper"
                                 controlId="formBasicEmail"
                               >
-                                <Form.Label>Email address</Form.Label>
+                                <Form.Label>Purchase Price</Form.Label>
+                                <FontAwesomeIcon icon={faDollar} />
                                 <Form.Control
-                                  type="email"
-                                  placeholder="Enter email"
+                                  type="text"
                                 />
                               </Form.Group>
                             </Col>
                             <Col lg={6}>
-                              <Form.Group className="mb-3">
-                                <Form.Label>Disabled select menu</Form.Label>
+                              <Form.Group className="mb-3  group-wrapper">
+                                <Form.Label>Mortgage Term</Form.Label>
                                 <Form.Select>
                                   <option>Disabled select</option>
                                 </Form.Select>
@@ -92,16 +92,16 @@ const Calculator = () => {
                           <Row>
                             <Col lg={6}>
                               <Form.Group
-                                className="mb-3"
+                                className="mb-3 group-wrapper"
                                 controlId="formBasicEmail"
                               >
-                                <Form.Label>Email address</Form.Label>
+                                <Form.Label>Down Payment ($)</Form.Label>
                                 <Form.Range />
                               </Form.Group>
                             </Col>
                             <Col lg={6}>
-                              <Form.Group className="mb-3">
-                                <Form.Label>Disabled select menu</Form.Label>
+                              <Form.Group className="mb-3 group-wrapper">
+                                <Form.Label>Annual Taxes ($)</Form.Label>
                                 <Form.Range />
                               </Form.Group>
                             </Col>
@@ -110,10 +110,10 @@ const Calculator = () => {
                           <Row>
                             <Col lg={12}>
                               <Form.Group
-                                className="mb-3"
+                                className="mb-3 group-wrapper"
                                 controlId="formBasicEmail"
                               >
-                                <Form.Label>Email address</Form.Label>
+                                <Form.Label>Interest Rate (%)</Form.Label>
                                 <Form.Range />
                               </Form.Group>
                             </Col>
@@ -121,10 +121,10 @@ const Calculator = () => {
                           <Row>
                             <Col lg={12}>
                               <Form.Group
-                                className="mb-3"
+                                className="mb-3 group-wrapper"
                                 controlId="formBasicEmail"
                               >
-                                <Form.Label>Email address</Form.Label>
+                                <Form.Label>Mortgage Insurance Rate (%)</Form.Label>
                                 <Form.Range />
                               </Form.Group>
                             </Col>
@@ -132,32 +132,34 @@ const Calculator = () => {
                           <Row>
                             <Col lg={6}>
                               <Form.Group
-                                className="mb-3"
+                                className="mb-3 group-wrapper"
                                 controlId="formBasicEmail"
                               >
-                                <Form.Label>Email address</Form.Label>
+                                <Form.Label>Annual Insurance</Form.Label>
+                                <FontAwesomeIcon icon={faDollar} />
                                 <Form.Control
                                   type="email"
-                                  placeholder="Enter email"
+                                 
                                 />
                               </Form.Group>
                             </Col>
                             <Col lg={6}>
                               <Form.Group
-                                className="mb-3"
+                                className="mb-3 group-wrapper"
                                 controlId="formBasicEmail"
                               >
-                                <Form.Label>Email address</Form.Label>
+                                <Form.Label>Monthly HOA</Form.Label>
+                                <FontAwesomeIcon icon={faDollar} />
                                 <Form.Control
                                   type="email"
-                                  placeholder="Enter email"
+                                  
                                 />
                               </Form.Group>
                             </Col>
                           </Row>
                         </div>
                       </Col>
-                      <Col lg={6}>
+                      <Col lg={5}>
                         <Row>
                           <Col lg={12}>
                             <div className="calculations">
@@ -192,7 +194,7 @@ const Calculator = () => {
                         </Row>
                         <Row>
                           <Col lg={12}>
-                            <p>
+                            <p className="desc">
                               *Hypothetical monthly mortgage payments reflect
                               hypothetical Principal, Interest, Taxes,
                               Insurance, and Home Owners Association dues
