@@ -1,0 +1,41 @@
+#calculator {
+  background: rgba(0, 127, 221, 1);
+  max-width: 100%;
+  position: relative;
+  padding: 150px 0;
+  .calculator-content {
+    .heading {
+      h3 {
+        font-weight: 800;
+        font-size: 4em;
+        text-align: center;
+        margin: 0px 15px 75px;
+        color: #fff;
+      }
+    }
+    .tabs {
+      .desc {
+        p {
+        }
+      }
+      .calculator {
+      }
+      .calculations {
+        .heading {
+          h2 {
+          }
+          h3 {
+          }
+        }
+        .selected-values-calc {
+          div {
+            p {
+            }
+            h5 {
+            }
+          }
+        }
+      }
+    }
+  }
+}
