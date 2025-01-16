@@ -7,8 +7,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faAngleDoubleRight, faMobileScreenButton, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
-import img1 from "../../assets/images/conventional/1.jpg";
-import img2 from "../../assets/images/conventional/2.jpg";
+import img1 from "../../assets/images/renovation/1.jpg";
+import img2 from "../../assets/images/renovation/2.jpg";
+import img3 from "../../assets/images/renovation/3.jpg";
 
 import "../../assets/css/style.scss";
 
@@ -67,7 +68,7 @@ const Renovation = () => {
 
                             </ul>
                             <p>
-                                <img src="" alt="" />
+                                <img src={img1} alt="img-1" />
                             </p>
                             <h2 id="reno-1">What is a 203(k) Renovation Mortgage?</h2>
                             <p>
@@ -93,7 +94,7 @@ const Renovation = () => {
                             </p>
                             <p>
                                 Borrowers using a 203(k) standard loan must hire a HUD consultant to oversee the renovation process.<br />
-                                <img src="" alt="" />
+                                <img src={img2} alt="img-2" />
                             </p>
                             <h2 id="reno-3">How to Qualify for a 203(k) Renovation Mortgage</h2>
                             <ul>
@@ -126,7 +127,7 @@ const Renovation = () => {
                             <p>
                                 Then, after the loan has been finalized, the contractors can start the work. Depending on the extent of the repairs, you may be able to move in at the same time. For bigger projects, though, you should arrange to live somewhere else
                                 until work is complete. You can finance up to six months of payments into your loan amount to allow room in your budget to do so.<br />
-                                <img src="" alt="" />
+                                <img src={img3} alt="img-3" />
                             </p>
                             <h2 id="reno-5">Frequently Asked Questions</h2>
                             <h4>Is the 203k program allowed for use by investors?</h4>

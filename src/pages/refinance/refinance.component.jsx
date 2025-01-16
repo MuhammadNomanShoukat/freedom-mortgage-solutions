@@ -8,8 +8,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faAngleDoubleRight, faMobileScreenButton, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
-import img1 from "../../assets/images/conventional/1.jpg";
-import img2 from "../../assets/images/conventional/2.jpg";
+import img1 from "../../assets/images/refinance/1.jpg";
+import img2 from "../../assets/images/refinance/2.jpg";
+import img3 from "../../assets/images/refinance/3.jpg";
 
 import "../../assets/css/style.scss";
 
@@ -67,7 +68,7 @@ const Refinance = () => {
 
                             </ul>
                             <p>
-                                <img src="" alt="" /><br />
+                                <img src={img1} alt="img-1" /><br />
                                 When you refinance, you replace your current home loan with a new one. Mortgage refinancing requires you to qualify for the loan, just as you had to meet the lender’s requirements for the original mortgage. You file an application, go
                                 through the underwriting process and go to closing, as you did when you initially purchased the home.
                             </p>
@@ -86,7 +87,7 @@ const Refinance = () => {
                             </p>
                             <p>
                                 As you go through this process, keep an eye on the closing costs. Also, watch out for things like prepayment penalties, which can cause problems down the road if you pay off the mortgage early or refinance again.<br />
-                                <img src="" alt="" />
+                                <img src={img2} alt="img-2" />
                             </p>
                             <h2 id="refi-2">Reasons to Refinance a Mortgage</h2>
                             <ul>
@@ -122,7 +123,7 @@ const Refinance = () => {
                                 </li>
                             </ul>
                             <p>
-                                <img src="" alt="" />
+                                <img src={img3} alt="img-1" />
                             </p>
                             <h2 id="refi-4">Frequently Asked Questions</h2>
                             <h4>What’s the difference between pre-qualified and pre-approved?</h4>

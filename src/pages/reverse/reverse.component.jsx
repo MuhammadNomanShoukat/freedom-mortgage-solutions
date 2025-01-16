@@ -7,8 +7,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faAngleDoubleRight, faMobileScreenButton, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
-import img1 from "../../assets/images/conventional/1.jpg";
-import img2 from "../../assets/images/conventional/2.jpg";
+import img1 from "../../assets/images/reverse/1.jpg";
+import img2 from "../../assets/images/reverse/2.jpg";
+import img3 from "../../assets/images/reverse/3.jpg";
 
 import "../../assets/css/style.scss";
 
@@ -68,7 +69,7 @@ const Reverse = () => {
                                 <li><HashLink to="#reverse-7">Reverse Mortgage FAQs</HashLink></li>
                             </ul>
                             <p>
-                                <img src="" alt="" />
+                                <img src={img1} alt="img-1" />
                             </p>
                             <h2 id="reverse-1">What is a Reverse Mortgage?</h2>
                             <p>A reverse mortgage is a type of loan where the Los Angeles homeowner withdraws a portion of their equity but doesn’t have to repay the loan until they leave the house.</p>
@@ -104,7 +105,7 @@ const Reverse = () => {
                                 </li>
                             </ul>
                             <p>
-                                <img src="" alt="" />
+                                <img src={img2} alt="img-2" />
                             </p>
                             <h2 id="reverse-4">Ways to Receive Proceeds from a Reverse Mortgage</h2>
                             <ul>
@@ -139,7 +140,7 @@ const Reverse = () => {
                             <p>
                                 Make sure to keep all copies of any correspondence and send your letter via certified mail and ask for a return receipt so that you’ll know it got into the right hands. Afterwards, your Los Angeles lender will have 20 days to return any
                                 fees you’ve paid for the reverse mortgage.<br />
-                                <img src="" alt="" />
+                                <img src={img3} alt="img-3" />
                             </p>
                             <h2 id="reverse-7">Frequently Asked Questions</h2>
                             <h4>How much can I qualify for?</h4>

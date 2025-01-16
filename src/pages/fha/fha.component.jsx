@@ -8,8 +8,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faAngleDoubleRight, faMobileScreenButton, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
-import img1 from "../../assets/images/conventional/1.jpg";
-import img2 from "../../assets/images/conventional/2.jpg";
+import img1 from "../../assets/images/fah/1.jpg";
+import img2 from "../../assets/images/fah/2.jpg";
+import img3 from "../../assets/images/fah/3.jpg";
 
 import "../../assets/css/style.scss";
 
@@ -69,7 +70,7 @@ const Fha = () => {
 
                             </ul>
                             <p>
-                                <img src="" alt="" />
+                                <img src={img1} alt="img-1" />
                             </p>
                             <h2 id="fha-1">What is an FHA Home Loan?</h2>
                             <p>
@@ -104,7 +105,7 @@ const Fha = () => {
                             </p>
                             <p>
                                 If you start with a down payment of less than 10%, you’ll continue to pay mortgage insurance for the duration of the loan. Those with 10% down payments will pay FHA mortgage insurance for 11 years.<br />
-                                <img src="" alt="" />
+                                <img src={img2} alt="img-2" />
                             </p>
                             <h2 id="fha-3">How to Qualify For a FHA Loan in Los Angeles</h2>
                             <ul>
@@ -146,7 +147,7 @@ const Fha = () => {
                                 <li>Good for first-time homebuyers.</li>
                             </ul>
                             <p>
-                                <img src="" alt="" />
+                                <img src={img3} alt="img-3" />
                             </p>
                             <h2 id="fha-6">Frequently Asked Questions</h2>
                             <h4>What’s the difference between pre-qualified and pre-approved?</h4>

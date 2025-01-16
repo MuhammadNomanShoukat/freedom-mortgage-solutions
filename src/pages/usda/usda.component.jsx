@@ -7,8 +7,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faAngleDoubleRight, faMobileScreenButton, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
-import img1 from "../../assets/images/conventional/1.jpg";
-import img2 from "../../assets/images/conventional/2.jpg";
+import img1 from "../../assets/images/usda/1.jpg";
+import img2 from "../../assets/images/usda/2.jpg";
+import img3 from "../../assets/images/usda/3.jpg";
 
 import "../../assets/css/style.scss";
 
@@ -68,7 +69,7 @@ const Usda = () => {
 
                             </ul>
                             <p>
-                                <img src="" alt="" />
+                                <img src={img1} alt="img-1" />
                             </p>
                             <h2 id="usda-1">What is a USDA Home Mortgage?</h2>
                             <p>
@@ -105,7 +106,7 @@ const Usda = () => {
                                 </li>
                             </ul>
                             <p>
-                                <img src="" alt="" /><br />
+                                <img src={img2} alt="img-2" /><br />
                                 USDA “guarantees” its loan program — meaning it offers protection to Los Angeles mortgage lenders in case USDA borrowers default. But the program is partially self-funded. So to keep it running, the USDA uses homeowner-paid mortgage
                                 insurance premiums.
                             </p>
@@ -141,7 +142,7 @@ const Usda = () => {
                                 <li>Mortgage insurance included (may be financed into loan).</li>
                             </ul>
                             <p>
-                                <img src="" alt="" />
+                                <img src={img3} alt="img-3" />
                             </p>
                             <h2 id="usda-6">Frequently Asked Questions</h2>
                             <h4>Are only first-time homebuyers eligible?</h4>

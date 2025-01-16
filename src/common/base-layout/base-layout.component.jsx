@@ -8,7 +8,7 @@ import ScrollUp from "../scroll-up/scroll-up.component";
 function BaseLayout({ children }) {
   return (
     <Fragment>
-      <Container fluid className="p-0">
+      <Container fluid className="p-0 main-wrapper">
         <NavbarMenu />
         {children}
         <Footer />

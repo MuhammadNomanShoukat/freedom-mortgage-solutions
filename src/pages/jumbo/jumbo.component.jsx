@@ -8,8 +8,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faAngleDoubleRight, faMobileScreenButton, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
-import img1 from "../../assets/images/conventional/1.jpg";
-import img2 from "../../assets/images/conventional/2.jpg";
+import img1 from "../../assets/images/jumbo/1.jpg";
+import img2 from "../../assets/images/jumbo/2.jpg";
+import img3 from "../../assets/images/jumbo/3.jpg";
 
 import "../../assets/css/style.scss";
 
@@ -68,7 +69,7 @@ const Jumbo = () => {
 
                             </ul>
                             <p>
-                                <img src="" alt="" />
+                                <img src={img1} alt="img-1" />
                             </p>
                             <h2 id="jumbo-1">What is a Jumbo Mortgage?</h2>
                             <p>
@@ -102,7 +103,7 @@ const Jumbo = () => {
                                 </li>
                             </ul>
                             <p>
-                                <img src="" alt="" />
+                                <img src={img2} alt="img-2" />
                                 <br />
                                 Many government-backed mortgages are designed for moderate- and low-income borrowers. The U.S. Department of Agriculture loan program has strict income limits that make it virtually impossible to qualify for a jumbo loan because you
                                 won’t pass the DTI test.
@@ -133,7 +134,7 @@ const Jumbo = () => {
                                 <li>They have stricter qualification rules than other types of mortgages.</li>
                             </ul>
                             <p>
-                                <img src="" alt="" />
+                                <img src={img3} alt="img-3" />
                             </p>
                             <h2 id="jumbo-5">Frequently Asked Questions</h2>
                             <h4>What are jumbo loan amounts?</h4>

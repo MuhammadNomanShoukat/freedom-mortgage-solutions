@@ -8,8 +8,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faAngleDoubleRight, faMobileScreenButton, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
-import img1 from "../../assets/images/conventional/1.jpg";
-import img2 from "../../assets/images/conventional/2.jpg";
+import img1 from "../../assets/images/va/1.jpg";
+import img2 from "../../assets/images/va/2.jpg";
+import img3 from "../../assets/images/va/2.jpg";
 
 import "../../assets/css/style.scss";
 
@@ -69,7 +70,7 @@ const Va = () => {
 
                             </ul>
                             <p>
-                                <img src="" alt="" />
+                                <img src={img1} alt="img-1" />
                             </p>
                             <h2 id="va-1">What is a VA Home Loan?</h2>
                             <p>
@@ -99,7 +100,7 @@ const Va = () => {
                                 <li>In order to go through the process, you need to obtain a VA Certificate of Eligibility (COE). Without this certificate, you won’t be able to get your loan.</li>
                             </ul>
                             <p>
-                                <img src="" alt="" />
+                                <img src={img2} alt="img-2" />
                             </p>
                             <h2 id="va-3">Types of VA Home Loans</h2>
                             <ul>
@@ -136,7 +137,7 @@ const Va = () => {
                                 <li>A VA loan can only be used to buy or build a primary residence or to refinance an existing loan. So you won’t be able to buy an investment property or vacation home with one.</li>
                             </ul>
                             <p>
-                                <img src="" alt="" />
+                                <img src={img3} alt="img-3" />
                             </p>
                             <h2 id="va-6">Frequently Asked Questions</h2>
                             <h4>If I have already obtained one VA loan, can I get another one?</h4>

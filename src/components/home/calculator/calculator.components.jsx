@@ -17,7 +17,7 @@ import {
 
 import "./calculator.style.scss";
 
-const Calculator = ({heading}) => {
+const Calculator = ({heading=true}) => {
   const [conventionalData, setConventionalData] = useState({
     purchasePrice: 0,
     mortgageTerms: [
