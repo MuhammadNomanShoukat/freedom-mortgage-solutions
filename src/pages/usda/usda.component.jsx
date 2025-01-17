@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
@@ -14,6 +14,12 @@ import img3 from "../../assets/images/usda/3.jpg";
 import "../../assets/css/style.scss";
 
 const Usda = () => {
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    }, [])
     return (
         <section id="usda">
             <Container>

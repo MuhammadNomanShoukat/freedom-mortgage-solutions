@@ -44,11 +44,11 @@ const Blog = () => {
                       retreat that friends and family will love. Here…
                     </p>
                   </div>
-                  <div className="arrow">
+                  {/* <div className="arrow">
                     <Link to="">
                       Read Post <FontAwesomeIcon icon={faArrowRight} />
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -78,11 +78,11 @@ const Blog = () => {
                       smart staging, here are actionable tips to…
                     </p>
                   </div>
-                  <div className="arrow">
+                  {/* <div className="arrow">
                     <Link to="">
                       Read Post <FontAwesomeIcon icon={faArrowRight} />
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -115,11 +115,11 @@ const Blog = () => {
                       recommendations on how often each…
                     </p>
                   </div>
-                  <div className="arrow">
+                  {/* <div className="arrow">
                     <Link to="">
                       Read Post <FontAwesomeIcon icon={faArrowRight} />
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

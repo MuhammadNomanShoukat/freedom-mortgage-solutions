@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 
 import Banner from "../../components/home/banner/banner.component";
 import IconBoxes from "../../components/home/icon-boxes/icon-boxes.component";
@@ -10,6 +10,13 @@ import Calculator from "../../components/home/calculator/calculator.components";
 
 
 const Home = () => {
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    }, [])
     return (
         <>
             <Banner />

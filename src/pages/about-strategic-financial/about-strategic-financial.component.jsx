@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
@@ -13,6 +13,12 @@ import img2 from "../../assets/images/conventional/2.jpg";
 import "../../assets/css/style.scss";
 
 const AboutStrategicFinancial = () => {
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    }, [])
     return (
         <section id="about-strategic-finance">
             <Container>
@@ -77,7 +83,7 @@ const AboutStrategicFinancial = () => {
                             <p>
                                 Be mindful of your risk tolerance and consider working with a financial advisor to help guide you through the decision-making process and ensure your plan stays on track. A solid financial strategy not only ensures you meet your goals but also provides peace of mind for the future.
                             </p>
-                            
+
                             <h2 id="sf-2">Why Strategic Financial Planning Matters</h2>
                             <ul>
                                 <li>
@@ -111,7 +117,7 @@ const AboutStrategicFinancial = () => {
                                     <strong>Investment Plan</strong> – an investment-focused financial plan outlines strategies for building wealth through various investment vehicles, including stocks, bonds, real estate, and other assets.
                                 </li>
                             </ul>
-                        
+
                             <h2 id="sf-4">Frequently Asked Questions on Strategic Financial Planning</h2>
                             <h4>What is the importance of a financial plan?</h4>
                             <p>

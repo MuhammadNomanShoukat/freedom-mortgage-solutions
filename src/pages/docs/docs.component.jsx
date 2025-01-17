@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { Container, Form, Button, Col, Row, Alert } from 'react-bootstrap';
+import React, { useEffect } from "react";
+import { Container, Col, Row } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -11,38 +10,13 @@ import "../../assets/css/style.scss";
 import FileUploadForm from "./fileUploaderForm";
 
 const Docs = () => {
-    const [username, setUsername] = useState('');
-    const [email, setEmail] = useState('');
-    const [file, setFile] = useState(null);
-    const [fileError, setFileError] = useState('');
-    const [formError, setFormError] = useState('');
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    }, [])
 
-    const handleFileChange = (e) => {
-        const selectedFile = e.target.files[0];
-        if (selectedFile) {
-            const allowedTypes = ['application/pdf', 'image/jpeg', 'image/png'];
-            if (!allowedTypes.includes(selectedFile.type)) {
-                setFileError('Only PDF, JPG, JPEG, PNG file types are allowed.');
-                setFile(null);
-            } else {
-                setFileError('');
-                setFile(selectedFile);
-            }
-        }
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (!username || !email) {
-            setFormError('Please fill in all fields.');
-        } else if (!file) {
-            setFormError('Please upload a file.');
-        } else {
-            setFormError('');
-            // Handle form submission here (e.g., send data to API)
-            alert('Form submitted successfully!');
-        }
-    };
     return (
         <section id="about-strategic-finance">
             <Container>

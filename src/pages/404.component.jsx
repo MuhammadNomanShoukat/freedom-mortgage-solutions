@@ -2,10 +2,13 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const NotFound = () => {
-  const navigate = useNavigate();
-
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }, [])
   
-
   return (
     <div style={styles.container}>
       <h1 style={styles.heading}>404 - Page Not Found</h1>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Modal, Button, Form, Row, Col, Container } from "react-bootstrap";
 
 import logo from "../../assets/images/logo/logo.png";
@@ -6,6 +6,12 @@ import logo from "../../assets/images/logo/logo.png";
 import "./contact.style.scss";
 
 const ContactForm = ({ showForm, controlForm }) => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }, [])
   return (
     <section id="contact-form-modal">
       <Modal
@@ -86,10 +92,10 @@ const ContactForm = ({ showForm, controlForm }) => {
                   </Form>
                   <div className="mt-3">
                     <div className="modal-form-footer">
-                        <Form.Check
-                          type="checkbox"
-                          
-                        />
+                      <Form.Check
+                        type="checkbox"
+
+                      />
                       <small>
                         By providing a telephone number and submitting the form
                         you are consenting to be contacted by Strategic

@@ -11,9 +11,15 @@ const IconBoxes = () => {
         <section id="boxes">
             <Container>
                 <Row>
-                    <Col lg={12}>
+                    {/* <Col lg={12}>
                         <div className="boxes-content">
-                            <div className="box">
+                            
+                           
+                            
+                            
+                        </div>
+                    </Col> */}
+                    <Col lg={3}><div className="box">
                                 <div className="icon">
                                     <FontAwesomeIcon icon={faListOl} />
                                 </div>
@@ -21,8 +27,8 @@ const IconBoxes = () => {
                                     <h3>Explore Your Loan Options</h3>
                                     <Link to="">Loan Options <FontAwesomeIcon icon={faArrowRight} /></Link>
                                 </div>
-                            </div>
-                            <div className="box">
+                            </div></Col>
+                    <Col lg={3}> <div className="box">
                                 <div className="icon">
                                     <FontAwesomeIcon icon={faCalculator} />
                                 </div>
@@ -30,8 +36,8 @@ const IconBoxes = () => {
                                     <h3>Estimate Your Mortgage Payment</h3>
                                     <Link to="">Get Started <FontAwesomeIcon icon={faArrowRight} /></Link>
                                 </div>
-                            </div>
-                            <div className="box">
+                            </div></Col>
+                    <Col lg={3}><div className="box">
                                 <div className="icon">
                                     <FontAwesomeIcon icon={faHome} />
                                 </div>
@@ -39,8 +45,8 @@ const IconBoxes = () => {
                                     <h3>What's Your Home Worth Today?</h3>
                                     <Link to="">Find Out Now <FontAwesomeIcon icon={faArrowRight} /></Link>
                                 </div>
-                            </div>
-                            <div className="box">
+                            </div></Col>
+                    <Col lg={3}><div className="box">
                                 <div className="icon">
                                     <FontAwesomeIcon icon={faComments} />
                                 </div>
@@ -48,9 +54,7 @@ const IconBoxes = () => {
                                     <h3>Real Customer Experiences</h3>
                                     <Link to="">Read Reviews <FontAwesomeIcon icon={faArrowRight} /></Link>
                                 </div>
-                            </div>
-                        </div>
-                    </Col>
+                            </div></Col>
                 </Row>
             </Container>
         </section>

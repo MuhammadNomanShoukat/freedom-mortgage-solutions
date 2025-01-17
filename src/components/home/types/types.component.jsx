@@ -38,8 +38,8 @@ const Types = () => {
                     </p>
                   </div>
                   <div className="arrow">
-                    <Link to="">
-                      Jumbo Loans <FontAwesomeIcon icon={faArrowRight} />
+                    <Link to="/fha">
+                    FHA Loans <FontAwesomeIcon icon={faArrowRight} />
                     </Link>
                   </div>
                 </div>
@@ -57,8 +57,8 @@ const Types = () => {
                     </p>
                   </div>
                   <div className="arrow">
-                    <Link to="">
-                      Jumbo Loans <FontAwesomeIcon icon={faArrowRight} />
+                    <Link to="/conventional">
+                    Conventional Loans <FontAwesomeIcon icon={faArrowRight} />
                     </Link>
                   </div>
                 </div>
@@ -76,8 +76,8 @@ const Types = () => {
                     </p>
                   </div>
                   <div className="arrow">
-                    <Link to="">
-                      Jumbo Loans <FontAwesomeIcon icon={faArrowRight} />
+                    <Link to="/jumbo">
+                    Jumbo Loans <FontAwesomeIcon icon={faArrowRight} />
                     </Link>
                   </div>
                 </div>

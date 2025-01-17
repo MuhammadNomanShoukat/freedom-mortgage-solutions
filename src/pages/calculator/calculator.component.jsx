@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { Container, Form, Button, Col, Row, Alert } from 'react-bootstrap';
+import React, { useEffect } from "react";
+import { Container, Col, Row, } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -10,7 +9,12 @@ import CalculatorComponent from "../../components/home/calculator/calculator.com
 import "../../assets/css/style.scss";
 
 const Calculator = () => {
-    
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    }, [])
     return (
         <section id="about-strategic-finance">
             <Container>
@@ -55,7 +59,7 @@ const Calculator = () => {
                     </Col>
                     <Col lg={9}>
                         <div className="desc-section">
-                            <CalculatorComponent heading={false}/>
+                            <CalculatorComponent heading={false} />
                             <Link to="/contact-us" className="contact-btn" >
                                 Questions? Contact Strategic Financial Today!
                             </Link>
