@@ -62,7 +62,7 @@ const Blog = () => {
                       <img src={part2} alt="part-2" />
                     </Link>
                     <span className="date">
-                      <FontAwesomeIcon icon={faCalendar} /> January 10, 2025
+                      <FontAwesomeIcon icon={faCalendar} /> July 15, 2025
                     </span>
                   </div>
                   <div className="content">
@@ -96,7 +96,7 @@ const Blog = () => {
                       <img src={part3} alt="part-3" />
                     </Link>
                     <span className="date">
-                      <FontAwesomeIcon icon={faCalendar} /> January 10, 2025
+                      <FontAwesomeIcon icon={faCalendar} /> September 20, 2025
                     </span>
                   </div>
                   <div className="content">

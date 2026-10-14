@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import logo from "../../assets/images/logo/logo.png";
+import logo from "../../assets/images/logo/logo_1.png";
 
 import Contact from "../../pages/contact/contact.component";
 
@@ -32,38 +32,41 @@ function NavbarMenu() {
               <NavDropdown.Item href="#/fixed-rate">
                 Fixed-Rate Mortgages
               </NavDropdown.Item>
-              <NavDropdown.Item href="#/jumbo">
+              {/* <NavDropdown.Item href="#/jumbo">
                 Jumbo Home Loans
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
               <NavDropdown.Item href="#/refinance">
                 Refinancing
               </NavDropdown.Item>
               <NavDropdown.Item href="#/renovation">
-                Renovation Mortgage 203(k)
+                Flex Modification
               </NavDropdown.Item>
               <NavDropdown.Item href="#/reverse">
                 Reverse Mortgages
               </NavDropdown.Item>
-              <NavDropdown.Item href="#/usda">
+              {/* <NavDropdown.Item href="#/usda">
                 USDA Home Mortgages
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
               <NavDropdown.Item href="#/va">VA Home Loans</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="About" id="nav-dropdown">
+            {/* <NavDropdown title="About" id="nav-dropdown">
               <NavDropdown.Item href="#/about-strategic-financial">
                 About Strategic Financial
               </NavDropdown.Item>
-              {/* <NavDropdown.Item href="#/blog">Mortgage Blog</NavDropdown.Item>
-                <NavDropdown.Item href="#/reviews">Mortgage Reviews</NavDropdown.Item> */}
-            </NavDropdown>
-            <NavDropdown title="Resources" id="nav-dropdown">
+              <NavDropdown.Item href="#/blog">Mortgage Blog</NavDropdown.Item>
+                <NavDropdown.Item href="#/reviews">Mortgage Reviews</NavDropdown.Item>
+            </NavDropdown> */}
+            {/* <NavDropdown title="Resources" id="nav-dropdown">
               <NavDropdown.Item href="#/doc">Doc Uploader</NavDropdown.Item>
               <NavDropdown.Item href="#/calculator">
                 Mortgage Calculators
               </NavDropdown.Item>
-              {/* <NavDropdown.Item href="#/home-worth">What’s Your Home Worth?</NavDropdown.Item> */}
-            </NavDropdown>
+              <NavDropdown.Item href="#/home-worth">What’s Your Home Worth?</NavDropdown.Item>
+            </NavDropdown> */}
+            {/* <Nav.Link href="#/about-strategic-financial">About Strategic Financial</Nav.Link> */}
+            <Nav.Link href="#/doc">Doc Uploader</Nav.Link>
             <Nav.Link onClick={()=>contactFormHandler()}>Contact</Nav.Link>
+            
           </Nav>
           <Nav>
             <Nav.Link onClick={()=>contactFormHandler()} className="apply-online-btn px-4">

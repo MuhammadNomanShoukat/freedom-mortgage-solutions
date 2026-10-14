@@ -53,7 +53,7 @@ const FileUploadForm = () => {
     };
 
     return (
-        <Container className="my-4 w-50 mx-auto">
+        <Container className="my-4 w-75 mx-auto">
             <h2>File Upload Form</h2>
             <Form onSubmit={handleSubmit}>
                 {/* Username Field */}

@@ -1,38 +1,39 @@
 #banner {
     text-align: center;
-    padding: 40px 0 300px;
+    // padding: 100px 0 300px;
+    padding: 180px 0px;
     position: relative;
     max-width: 100%;
     border-bottom: 1px solid #ddd;
-    position: relative;
     z-index: -1;
+    background: url('../../../assets/images/banner.jpg') bottom center no-repeat;
 
     &::before {
-        background: url('../../../assets/images/logo/banner.png') bottom center no-repeat;
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 461px;
-        width: 100%;
-        z-index: -1;
+        // background: url('../../../assets/images/logo/banner.png') bottom center no-repeat;
+        // content: '';
+        // position: fixed;
+        // left: 0;
+        // right: 0;
+        // bottom: 0;
+        // height: 461px;
+        // width: 100%;
+        // z-index: -1;
     }
 
     .banner-content {
         text-align: center;
 
         h1 {
-            color: #333;
+            color: #fff;
             font-weight: 800;
             font-size: 4.5em;
             margin: 0 0 15px;
             line-height: 1.1;
-            color: rgba(0, 127, 221, 1);
+           
         }
 
         p {
-            color: #333;
+            color: #fff;
             font-size: 1.7em;
             max-width: 900px;
             margin: 0 auto 40px;

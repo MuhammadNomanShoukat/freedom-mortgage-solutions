@@ -1,7 +1,7 @@
 #rates {
     // padding: 150px 0px 60px 0px;
     // padding-top: 150px;
-    margin: 0 auto 75px;
+    // margin: 0 auto 75px;
     background: url("../../../assets/images/logo/rates.png") bottom center no-repeat;
     background-size: 100% 100% !important;
     position: relative;
@@ -13,7 +13,7 @@
         height: 50%;
         content: '';
         z-index: -1;
-        background: rgba(0, 127, 221, 1) !important;
+        background: rgb(37 50 58);
     }
 
     // .rates-content {
@@ -39,7 +39,7 @@
             text-transform: uppercase;
             font-size: 1.5em;
             margin-bottom: 0;
-            color: rgba(0, 127, 221, 1);
+            color: rgb(204 86 24);
         }
 
         h1 {

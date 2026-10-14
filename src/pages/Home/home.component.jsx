@@ -25,7 +25,7 @@ const Home = () => {
             <Types />
             <Valuation />
             <Blog />
-            <Calculator />
+            {/* <Calculator /> */}
         </>
     )
 }

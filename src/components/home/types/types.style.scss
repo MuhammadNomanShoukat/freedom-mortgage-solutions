@@ -3,68 +3,86 @@
   text-align: center;
   padding: 100px 0;
   border: 0;
-  .types-content {
-    .heading {
-      h2 {
-        font-size: 1.5em;
-        font-weight: 300;
-        margin: 0 0 50px;
-        text-transform: uppercase;
-        margin: 0px;
-      }
-      h1 {
-        text-transform: none;
-        font-weight: 800;
-        color: #333;
-        display: block;
-        margin: 10px;
-        font-size: 3.3em;
-        letter-spacing: -1px;
-      }
+  // .types-content {
+  .heading {
+    h2 {
+      font-size: 1.5em;
+      font-weight: 300;
+      margin: 0 0 50px;
+      text-transform: uppercase;
+      margin: 0px;
     }
-    .types-boxs {
-      .box {
-        max-width: 32%;
-        text-align: center;
-        .img {
-          img {
-            margin: 0 0 40px;
-            width: 100%;
-            max-width: 300px;
-          }
+    h1 {
+      text-transform: none;
+      font-weight: 800;
+      color: #333;
+      display: block;
+      margin: 10px;
+      font-size: 3.3em;
+      letter-spacing: -1px;
+    }
+  }
+  .types-boxs {
+    position: relative;
+    &::before {
+      content: "";
+      height: 50px;
+      width: 50px;
+      background: #192730;
+      position: absolute;
+      top: 46px;
+      border-bottom-right-radius: 60px;
+    }
+    .box {
+      // max-width: 32%;
+      border: 1px solid #ddd;
+      text-align: center;
+      border-radius: 10px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      &:hover {
+        border: 1px solid #192730;
+      }
+      .img {
+        img {
+          margin: 0 0 40px;
+          width: 100%;
+          max-width: 300px;
+          background: #192730;
         }
-        .content {
-          h4 {
-            font-size: 1.6em;
-            color: #333;
-            font-weight: 800;
-            // margin: 0 0 25px;
-          }
-          h5 {
-            font-weight: 300;
-            text-transform: uppercase;
-            display: block;
-            margin: 10px 10px 25px 10px;
-            font-size: 16px;
-          }
-          p {
-            margin: 0px auto 50px;
-            max-width: 90%;
-            font-weight: 300;
-            font-size: 1.1em;
-            line-height: 1.8;
-          }
+      }
+      .content {
+        h4 {
+          font-size: 1.6em;
+          color: #333;
+          font-weight: 800;
+          // margin: 0 0 25px;
         }
-        .arrow {
-          a {
-            font-size: 1.1em;
-            text-transform: uppercase;
-            font-weight: 800;
-            color: rgb(0, 127, 221);
-            text-decoration: none;
-          }
+        h5 {
+          font-weight: 300;
+          text-transform: uppercase;
+          display: block;
+          margin: 10px 10px 25px 10px;
+          font-size: 16px;
+        }
+        p {
+          margin: 0px auto 50px;
+          max-width: 90%;
+          font-weight: 300;
+          font-size: 1.1em;
+          line-height: 1.8;
+        }
+      }
+      .arrow {
+        a {
+          font-size: 1.1em;
+          text-transform: uppercase;
+          font-weight: 800;
+          color: #cc5618;
+          text-decoration: none;
         }
       }
     }
   }
+  // }
 }

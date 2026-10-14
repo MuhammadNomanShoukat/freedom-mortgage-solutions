@@ -554,7 +554,7 @@ const Calculator = ({heading=true}) => {
                       <Col lg={12}>
                         <div className="desc">
                           <p>
-                            Curious about refinancing your home in Los Angeles?
+                            Curious about refinancing your home?
                             Now may be the right time to start saving money
                             every month!
                           </p>
